@@ -1,5 +1,5 @@
 ---
-title: "index.Rmd"
+title: "Website Lab3 Gapminder"
 author: "Ivonne Kienast"
 date: "2/26/2021"
 output: html_document
