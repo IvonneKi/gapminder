@@ -25,6 +25,69 @@ gap2011<- gapminder %>%
 ```
 
 ## Life expectancy
+
+Patterns in life expectancy
+
+```{r}
+gap2011 %>%
+  ggplot(aes(x=gdp/population, y=life_expectancy, size=population, color = continent)) +
+  geom_point()
+```
+
+<br>
+<br>
+#### Relation of life expectancy to infant mortality
+```{r}
+gap2011 %>%
+  ggplot(aes(x=life_expectancy,y= infant_mortality , color = continent))+
+  geom_point()
+```
+
+<br>
+<br>
+#### Relation of life exptectancy to fertilty
+```{r}
+gap2011 %>%
+  ggplot(aes(x= life_expectancy, y= fertility, color = continent))+
+  geom_point()
+```
+
+
+#### Testing group_by
+```{r}
+#group_by(gapminder, life_expectancy, infant_mortality, fertility, population, gdp) %>%
+#  summarize(mean_gdp) %>%
+#  ggplot(aes(x=)) +
+#  geom_point() +
+#  geom_line() +
+#  facet_wrap
+```
+
+
 ## Fertility
+
+
+```{r}
+gap2011 %>%
+  ggplot(aes(x= gdp/population, y= fertility, color = continent))+
+  geom_point()
+```
+
+#### Comparing fertility to infant mortality
+
+```{r}
+gap2011 %>%
+  ggplot(aes(x= fertility, y= infant_mortality, color = continent))+
+  geom_point()
+```
+
+
+
 ## Infant Mortality
+
+```{r}
+gap2011 %>%
+  ggplot(aes(x= gdp/population, y= infant_mortality, color = continent))+
+  geom_point()
+```
 
