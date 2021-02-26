@@ -1,0 +1,30 @@
+---
+title: "Lab3-Gapminder.Rmd"
+author: "Ivonne Kienast"
+date: "2/26/2021"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+
+ggplot to visually explore global trends in public health and economics compiled by the Gapminder project. This project was pioneered by Hans Rosling, who is famous for describing the prosperity of nations over time through famines, wars and other historic events.
+
+```{r}
+# install.packages("dslabs")
+library(dslabs)
+library(tidyverse)
+?gapminder
+
+gap2011<- gapminder %>%
+  as_tibble() %>%
+  filter(year == 2011)
+```
+
+## Life expectancy
+## Fertility
+## Infant Mortality
+
