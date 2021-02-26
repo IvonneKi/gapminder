@@ -376,25 +376,16 @@ summary {
 
 
 <hr />
-<p>title: “Website Lab3 Gapminder” author: “Ivonne Kienast” date: “2/26/2021” output: html_document</p>
+<p>title: “Website Lab3 Gapminder” author: “Ivonne Kienast” date: “2/26/2021” output: html_document `</p>
 <div id="data" class="section level2">
 <h2>Data</h2>
 <p>ggplot to visually explore global trends in public health and economics compiled by the Gapminder project. This project was pioneered by Hans Rosling, who is famous for describing the prosperity of nations over time through famines, wars and other historic events.</p>
 <pre class="r"><code># install.packages(&quot;dslabs&quot;)
 library(dslabs)
-library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
-<pre><code>## v ggplot2 3.3.3     v purrr   0.3.4
-## v tibble  3.0.6     v dplyr   1.0.3
-## v tidyr   1.1.2     v stringr 1.4.0
-## v readr   1.4.0     v forcats 0.5.1</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>?gapminder</code></pre>
-<pre><code>## starting httpd help server ...</code></pre>
-<pre><code>##  done</code></pre>
-<pre class="r"><code>gap2011&lt;- gapminder %&gt;%
+library(tidyverse)
+?gapminder
+
+gap2011&lt;- gapminder %&gt;%
   as_tibble() %&gt;%
   filter(year == 2011)</code></pre>
 </div>
